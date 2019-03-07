@@ -572,7 +572,7 @@ func TestStopDeadlock(t *testing.T) {
 	}
 }
 
-// Run with --race
+// TestStopRace: Run with --race
 func TestStopRace(t *testing.T) {
 	server, l, err := createListener(1 * time.Millisecond)
 	if err != nil {
